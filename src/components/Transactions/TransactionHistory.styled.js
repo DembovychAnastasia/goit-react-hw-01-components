@@ -48,7 +48,7 @@ export const Td = styled.td`
     text-align: center; 
     text-transform: capitalize;
     padding: 10px;
-    border: 0.125rem solid #e9edff;
+    /* border: 0.125rem solid #e9edff; */
    
 `;  
 
