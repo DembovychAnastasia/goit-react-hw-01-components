@@ -9,28 +9,18 @@ import friends from "./FriendList/friends.json"
 import { GlobalStyle } from "./GlobalStyle";
 import { Container } from "./Container";
 
+import { TransactionHistory } from "./Transactions/TransactionHistory";
+import transactions from "./Transactions/transactions.json"
+
 
 export const App = () => {
   return (
-    <Container
-      style={{
-        // height: '200vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexDirection: 'column',
-        // fontSize: 20,
-        // color: '#010101'
-      }}
-      
-    >  
+    <Container>  
       <Profile items={user}/>   
       <StatisticsList title="Upload stats" items={data} />
       <FriendList items={friends}/>
       <GlobalStyle/>
-      
-     
-       
+      <TransactionHistory items={transactions} />  
     </Container>  
   );
 };
